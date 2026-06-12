@@ -1,0 +1,1289 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>远汐 Offing｜公司简介</title>
+  <style>
+    :root {
+      --paper: #f8faf6;
+      --surface: #fffffb;
+      --ink: #0d1716;
+      --body: #30413f;
+      --muted: #6f7d78;
+      --line: #d8e2dc;
+      --sea: #2d6261;
+      --sea-soft: #e6f0ec;
+      --clay: #a76560;
+      --clay-soft: #f0e2df;
+      --gold: #a99556;
+      --gold-soft: #f1ecd8;
+      --slate: #13211f;
+      --shadow: 0 18px 45px rgba(13, 23, 22, 0.07);
+      --radius: 8px;
+      --max: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 78% 14%, rgba(45, 98, 97, 0.09), transparent 270px),
+        linear-gradient(180deg, rgba(238, 245, 241, 0.72) 0%, rgba(248, 250, 246, 0.96) 32%, rgba(250, 250, 245, 0.98) 100%),
+        var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.68;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 24px 22px 64px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      padding: 12px 0 24px;
+      color: var(--muted);
+      font-size: 13px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand-lockup {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .topbar strong {
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    .offing-symbol {
+      flex: 0 0 auto;
+      width: 26px;
+      height: 26px;
+      color: var(--sea);
+      overflow: visible;
+    }
+
+    .cover {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 332px;
+      gap: clamp(34px, 7vw, 88px);
+      padding: 70px 0 26px;
+      align-items: end;
+    }
+
+    .hero-copy {
+      position: relative;
+      isolation: isolate;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0 0 24px;
+    }
+
+    .hero-copy::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 169px;
+      width: min(680px, 96%);
+      height: 1px;
+      background: linear-gradient(90deg, rgba(45, 98, 97, 0.72), rgba(45, 98, 97, 0.1), transparent);
+      z-index: -1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--sea);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 36px;
+      height: 1px;
+      background: var(--sea);
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin-top: 16px;
+      font-size: clamp(66px, 9vw, 124px);
+      font-weight: 780;
+      line-height: 0.95;
+    }
+
+    .subtitle {
+      margin: 20px 0 0;
+      font-size: clamp(25px, 3vw, 34px);
+      line-height: 1.18;
+      font-weight: 760;
+      max-width: 760px;
+    }
+
+    .lead {
+      margin: 26px 0 0;
+      max-width: 670px;
+      color: var(--body);
+      font-size: 18px;
+    }
+
+    .cover-note {
+      position: relative;
+      overflow: hidden;
+      background: transparent;
+      border: 0;
+      border-left: 1px solid rgba(45, 98, 97, 0.22);
+      border-radius: 0;
+      padding: 0 0 8px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: 330px;
+      box-shadow: none;
+    }
+
+    .cover-note::before {
+      content: "";
+      position: absolute;
+      left: 28px;
+      right: 0;
+      top: 0;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(45, 98, 97, 0.52), rgba(45, 98, 97, 0.08), transparent);
+    }
+
+    .cover-note .label {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .cover-note .sentence {
+      margin: 18px 0 24px;
+      font-size: 30px;
+      line-height: 1.18;
+      font-weight: 760;
+    }
+
+    .not-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 18px 0 0;
+      border-top: 1px solid rgba(45, 98, 97, 0.18);
+      list-style: none;
+      color: var(--body);
+    }
+
+    .not-list li {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+    }
+
+    .not-list li::before {
+      content: "";
+      width: 18px;
+      height: 1px;
+      flex: 0 0 18px;
+      border-radius: 0;
+      background: var(--clay);
+      transform: translateY(-5px);
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 26px;
+      margin: 0 0 18px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .quick-card {
+      background: transparent;
+      border-right: 0;
+      padding: 18px 0 20px;
+      min-height: 104px;
+    }
+
+    .quick-card + .quick-card {
+      border-left: 1px solid var(--line);
+      padding-left: 24px;
+    }
+
+    .quick-card:last-child {
+      border-right: 0;
+    }
+
+    .quick-card b {
+      display: block;
+      font-size: 21px;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .quick-card span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .page-nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      overflow-x: auto;
+      margin: 0 0 22px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--line);
+      background: rgba(248, 250, 246, 0.92);
+      backdrop-filter: blur(10px);
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .page-nav a {
+      flex: 0 0 auto;
+      padding: 6px 10px;
+      color: var(--body);
+      border: 1px solid transparent;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 650;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .page-nav a:hover {
+      color: var(--sea);
+      border-color: rgba(45, 98, 97, 0.2);
+      background: rgba(255, 255, 251, 0.76);
+    }
+
+    .page-nav a:focus-visible {
+      outline: none;
+      color: var(--sea);
+      border-color: rgba(45, 98, 97, 0.3);
+      background: rgba(255, 255, 251, 0.88);
+    }
+
+    .section {
+      scroll-margin-top: 86px;
+      margin-top: 18px;
+      padding: 34px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 160px minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+      margin-bottom: 24px;
+    }
+
+    .num {
+      color: var(--clay);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: clamp(30px, 4vw, 48px);
+    }
+
+    .section-intro {
+      margin: 14px 0 0;
+      max-width: 790px;
+      color: var(--body);
+      font-size: 18px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+
+    .card h3 {
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--body);
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .statement {
+      background: var(--slate);
+      color: #fbfdf8;
+      border-radius: var(--radius);
+      padding: 26px;
+      margin: 18px 0;
+      font-size: 24px;
+      line-height: 1.45;
+      font-weight: 720;
+    }
+
+    .statement span {
+      color: #dbe8e4;
+      font-weight: 500;
+    }
+
+    .insight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .insight {
+      padding: 22px 22px 24px;
+      border-right: 1px solid var(--line);
+    }
+
+    .insight:last-child {
+      border-right: 0;
+    }
+
+    .insight b {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--sea);
+      font-size: 20px;
+      line-height: 1.22;
+    }
+
+    .insight p {
+      margin: 0;
+      color: var(--body);
+      font-size: 15px;
+    }
+
+    .logic-line {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .logic-step {
+      position: relative;
+      min-height: 116px;
+      padding: 16px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .logic-step::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      width: 12px;
+      height: 1px;
+      background: var(--line);
+    }
+
+    .logic-step:last-child::after {
+      display: none;
+    }
+
+    .logic-step b {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--sea);
+    }
+
+    .logic-step span {
+      color: var(--body);
+      font-size: 14px;
+    }
+
+    .matrix {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .matrix th,
+    .matrix td {
+      padding: 16px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .matrix th {
+      color: var(--sea);
+      background: var(--sea-soft);
+      font-size: 14px;
+    }
+
+    .matrix tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .matrix td {
+      color: var(--body);
+    }
+
+    .matrix strong {
+      color: var(--ink);
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 4px 10px;
+      color: var(--sea);
+      background: var(--sea-soft);
+      border: 1px solid rgba(47, 102, 99, 0.2);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .pill.clay {
+      color: var(--clay);
+      background: var(--clay-soft);
+      border-color: rgba(167, 101, 96, 0.2);
+    }
+
+    .pill.gold {
+      color: #6f5e2b;
+      background: var(--gold-soft);
+      border-color: rgba(169, 149, 86, 0.24);
+    }
+
+    .founder-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .founder-panel {
+      background: var(--slate);
+      color: #fbfdf8;
+      border-radius: var(--radius);
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .founder-panel h3 {
+      font-size: 32px;
+      line-height: 1.2;
+      margin: 0 0 16px;
+    }
+
+    .founder-panel p {
+      color: #dbe5e1;
+      margin: 0;
+    }
+
+    .case-stack {
+      display: grid;
+      gap: 12px;
+    }
+
+    .case {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px;
+    }
+
+    .case .brand {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+      color: var(--sea);
+      font-weight: 800;
+    }
+
+    .case p {
+      margin: 0;
+      color: var(--body);
+    }
+
+    .module-block + .module-block {
+      margin-top: 24px;
+    }
+
+    .module-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 12px;
+      color: var(--sea);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .module-label::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      background: var(--sea);
+    }
+
+    .revenue-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .revenue {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      min-height: 174px;
+    }
+
+    .revenue b {
+      color: var(--clay);
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .revenue p {
+      margin: 0;
+      color: var(--body);
+      font-size: 14px;
+    }
+
+    .flywheel {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .wheel-step {
+      min-height: 120px;
+      padding: 14px;
+      border-radius: var(--radius);
+      background: var(--surface);
+      border: 1px solid var(--line);
+    }
+
+    .wheel-step b {
+      display: block;
+      color: var(--sea);
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .wheel-step span {
+      color: var(--body);
+      font-size: 13px;
+    }
+
+    ul.clean {
+      margin: 12px 0 0;
+      padding-left: 18px;
+      color: var(--body);
+    }
+
+    ul.clean li {
+      margin: 7px 0;
+    }
+
+    .footer {
+      margin-top: 46px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 940px) {
+      .cover,
+      .section-head,
+      .two-col,
+      .three-col,
+      .founder-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-grid,
+      .insight-grid,
+      .logic-line,
+      .revenue-grid,
+      .flywheel {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .quick-card:nth-child(2) {
+        border-right: 0;
+      }
+
+      .quick-card:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .cover-note {
+        min-height: 0;
+        border-left: 0;
+        border-top: 1px solid rgba(45, 98, 97, 0.22);
+        padding: 24px 0 0;
+      }
+
+      .cover-note::before {
+        display: none;
+      }
+
+      .cover {
+        align-items: start;
+        gap: 22px;
+        padding: 48px 0 24px;
+      }
+
+      .hero-copy {
+        min-height: 0;
+        padding: 44px 0 8px;
+      }
+
+      .hero-copy::before {
+        top: 70px;
+        bottom: auto;
+        width: 100%;
+      }
+
+      .quick-card + .quick-card {
+        border-left: 0;
+        padding-left: 0;
+      }
+
+      .insight:nth-child(2) {
+        border-right: 0;
+      }
+
+      .insight:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--line);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 18px 14px 42px;
+      }
+
+      .topbar,
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .brand-lockup {
+        align-items: flex-start;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .subtitle {
+        font-size: 23px;
+      }
+
+      .lead {
+        font-size: 17px;
+      }
+
+      .cover {
+        padding-top: 28px;
+        gap: 20px;
+      }
+
+      .hero-copy {
+        padding: 42px 0 4px;
+      }
+
+      .cover-note {
+        padding: 22px 0 0;
+      }
+
+      .quick-grid,
+      .insight-grid,
+      .logic-line,
+      .revenue-grid,
+      .flywheel {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-card,
+      .quick-card:nth-child(2) {
+        border-right: 0;
+        padding-left: 0;
+      }
+
+      .quick-card {
+        min-height: auto;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .quick-card:last-child {
+        border-bottom: 0;
+      }
+
+      .insight,
+      .insight:nth-child(2) {
+        border-right: 0;
+      }
+
+      .insight {
+        padding: 18px 0 20px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .insight:last-child {
+        border-bottom: 0;
+      }
+
+      .page-nav {
+        margin-inline: -14px;
+        padding-inline: 14px;
+      }
+
+      .matrix {
+        display: block;
+        border: 0;
+        background: transparent;
+      }
+
+      .matrix thead {
+        display: none;
+      }
+
+      .matrix tbody,
+      .matrix tr,
+      .matrix td {
+        display: block;
+        width: 100%;
+      }
+
+      .matrix tr {
+        margin-bottom: 12px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        overflow: hidden;
+      }
+
+      .matrix td {
+        padding: 12px 14px;
+        border-bottom: 1px solid var(--line);
+        white-space: normal;
+      }
+
+      .matrix td::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 3px;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .matrix td:first-child::before {
+        display: none;
+      }
+
+      .matrix td:first-child {
+        color: var(--ink);
+        background: var(--sea-soft);
+        font-size: 18px;
+        font-weight: 760;
+      }
+
+      .matrix td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .page {
+        max-width: none;
+        padding: 0;
+      }
+
+      .card,
+      .cover-note,
+      .matrix,
+      .quick-card {
+        box-shadow: none;
+      }
+
+      .section {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand-lockup">
+        <svg class="offing-symbol" viewBox="0 0 96 96" aria-hidden="true">
+          <g fill="none" stroke="currentColor">
+            <path d="M15 50C15 23 30 12 48 12C66 12 81 23 81 50" stroke-width="6" stroke-linecap="butt"></path>
+            <path d="M3 52H93" stroke-width="5" stroke-linecap="butt"></path>
+            <path d="M17 62C22 80 35 87 48 87C61 87 74 80 79 62" stroke-width="6" stroke-linecap="butt"></path>
+            <path d="M18 65C30 59 40 70 52 65C64 60 74 60 84 65" stroke-width="3.2" stroke-linecap="round"></path>
+            <path d="M20 74C32 68 42 79 54 74C66 69 76 69 86 74" stroke-width="3.2" stroke-linecap="round"></path>
+          </g>
+        </svg>
+        <span><strong>远汐 Offing</strong>｜在抵达之前，先判断潮水</span>
+      </div>
+      <div>公司简介 v1｜2026</div>
+    </header>
+
+    <section class="cover">
+      <div class="hero-copy">
+        <div class="eyebrow">Business Plan</div>
+        <h1>远汐 Offing</h1>
+        <p class="subtitle">在抵达之前，先判断潮水。</p>
+        <p class="lead">
+          远汐 Offing 帮出海 AI 硬件与消费科技公司，先判断市场、品牌、GTM（Go-To-Market，市场进入路径）和资源配置，再决定预算怎么花。
+        </p>
+      </div>
+
+      <aside class="cover-note">
+        <div>
+          <div class="label">核心价值</div>
+          <div class="sentence">帮助 0-1 阶段的品牌，少犯贵的错。</div>
+        </div>
+        <ul class="not-list">
+          <li>不代运营。</li>
+          <li>不做融资中介。</li>
+          <li>先判断，再配资源。</li>
+        </ul>
+      </aside>
+    </section>
+
+    <div class="quick-grid" aria-label="business highlights">
+      <div class="quick-card">
+        <b>核心客户</b>
+        <span>VC（Venture Capital）、天使到 Pre-A（A 轮前）品牌方。</span>
+      </div>
+      <div class="quick-card">
+        <b>入口</b>
+        <span>Growth DD（Growth Due Diligence，海外增长尽调）、出海进入诊断、投后 GTM。</span>
+      </div>
+      <div class="quick-card">
+        <b>形态</b>
+        <span>鹿汐判断 + 小团队 + 专家网络 + VC 信任。</span>
+      </div>
+      <div class="quick-card">
+        <b>价值</b>
+        <span>品牌少犯贵的错，VC 更早看清增长风险。</span>
+      </div>
+    </div>
+
+    <nav class="page-nav" aria-label="页面目录">
+      <a href="#summary">公司</a>
+      <a href="#opportunity">机会</a>
+      <a href="#problem">问题</a>
+      <a href="#solution">解法</a>
+      <a href="#proof">鹿汐</a>
+      <a href="#products">产品与收入</a>
+      <a href="#gtm">增长路径</a>
+      <a href="#company">组织</a>
+    </nav>
+
+    <section class="section" id="summary">
+      <div class="section-head">
+        <div class="num">01 / EXECUTIVE SUMMARY</div>
+        <div>
+          <h2>这家公司做什么</h2>
+          <p class="section-intro">
+            在预算变大之前，把市场、品牌、GTM 和谁来做判断清楚。
+          </p>
+        </div>
+      </div>
+
+      <div class="statement">
+        贵的不是少做一个动作，而是第一市场、第一人群、第一句话、第一渠道和第一笔预算判断错。
+      </div>
+
+      <div class="logic-line">
+        <div class="logic-step">
+          <b>第一市场</b>
+          <span>先打哪里。</span>
+        </div>
+        <div class="logic-step">
+          <b>第一人群</b>
+          <span>谁会先买。</span>
+        </div>
+        <div class="logic-step">
+          <b>第一句话</b>
+          <span>卖点怎么讲。</span>
+        </div>
+        <div class="logic-step">
+          <b>第一渠道</b>
+          <span>DTC（Direct-to-Consumer，品牌官网直销）、Amazon、零售怎么排。</span>
+        </div>
+        <div class="logic-step">
+          <b>第一笔预算</b>
+          <span>钱先花哪。</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="opportunity">
+      <div class="section-head">
+        <div class="num">02 / MARKET OPPORTUNITY</div>
+        <div>
+          <h2>为什么现在做远汐</h2>
+          <p class="section-intro">
+            机会不在多做一家 agency，而在补一个早期出海公司和 VC 都缺的增长判断层。
+          </p>
+        </div>
+      </div>
+
+      <div class="insight-grid">
+        <article class="insight">
+          <b>AI 硬件和消费科技正在密集出海</b>
+          <p>产品、供应链和成本优势更成熟，但海外用户为什么买、先卖给谁、用什么话讲，仍然是早期生死题。</p>
+        </article>
+        <article class="insight">
+          <b>VC 缺少增长 DD</b>
+          <p>技术、财务、供应链有人看，但海外市场能不能成立、第一笔预算会不会烧错，常常没人替 VC 判断。</p>
+        </article>
+        <article class="insight">
+          <b>品牌方不能一上来就重组团队</b>
+          <p>自己找 CMO、搭团队太慢太贵；直接找服务商又容易先执行后判断。远汐先把方向定清楚。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="problem">
+      <div class="section-head">
+        <div class="num">03 / MARKET PROBLEM</div>
+        <div>
+          <h2>市场缺的不是更多服务商</h2>
+          <p class="section-intro">
+            产品强，不等于海外市场成立。
+          </p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="card">
+          <h3>品牌方的痛点</h3>
+          <p>产品会做，海外购买理由没立住。</p>
+        </div>
+        <div class="card">
+          <h3>VC 的痛点</h3>
+          <p>技术尽调有了，海外增长判断缺席。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="solution">
+      <div class="section-head">
+        <div class="num">04 / SOLUTION</div>
+        <div>
+          <h2>远汐做三件事</h2>
+          <p class="section-intro">
+            不抢执行。先把判断立起来。
+          </p>
+        </div>
+      </div>
+
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th>能力</th>
+            <th>解决的问题</th>
+            <th>典型交付</th>
+            <th>客户为什么愿意付费</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="能力"><strong>增长判断</strong></td>
+            <td data-label="解决的问题">需求验证、品类教育，还是成熟市场破局。</td>
+            <td data-label="典型交付">真实需求、人群、定位、GTM 风险。</td>
+            <td data-label="客户为什么愿意付费">少烧错钱，少错过窗口期。</td>
+          </tr>
+          <tr>
+            <td data-label="能力"><strong>资源编排</strong></td>
+            <td data-label="解决的问题">谁来做，先做什么，预算怎么排。</td>
+            <td data-label="典型交付">执行说明、资源选择、复盘节点。</td>
+            <td data-label="客户为什么愿意付费">团队不再各做各的。</td>
+          </tr>
+          <tr>
+            <td data-label="能力"><strong>信任节点</strong></td>
+            <td data-label="解决的问题">品牌方和 VC 之间缺增长判断层。</td>
+            <td data-label="典型交付">Growth DD、投后 GTM、闭门诊断。</td>
+            <td data-label="客户为什么愿意付费">VC 更放心，项目更清楚。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section" id="proof">
+      <div class="section-head">
+        <div class="num">05 / WHY LUXI</div>
+        <div>
+          <h2>为什么鹿汐能做这家公司</h2>
+          <p class="section-intro">
+            鹿汐亲手处理过三种硬件出海题。
+          </p>
+        </div>
+      </div>
+
+      <div class="founder-grid">
+        <div class="founder-panel">
+          <div>
+            <h3>先判断题型，再决定打法。</h3>
+            <p>从 0 到规模化、新品类教育、成熟市场破局。三类题，三套判断。</p>
+          </div>
+          <div class="pill-row">
+            <span class="pill">市场判断</span>
+            <span class="pill clay">品牌位置</span>
+            <span class="pill gold">增长系统</span>
+          </div>
+        </div>
+
+        <div class="case-stack">
+          <article class="case">
+            <div class="brand"><span>TYMO</span><span>从 0 到规模化</span></div>
+            <p>鹿汐操盘北美业务从 0 到 5000 万美金年销售额。</p>
+          </article>
+          <article class="case">
+            <div class="brand"><span>RingConn</span><span>新品类教育</span></div>
+            <p>鹿汐以全球 CMO（Chief Marketing Officer，首席市场官）身份推动智能戒指出海。</p>
+          </article>
+          <article class="case">
+            <div class="brand"><span>Ulike</span><span>成熟市场破局</span></div>
+            <p>鹿汐负责北美市场，推动品牌进入头部竞争位置。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-head">
+        <div class="num">06 / PRODUCT & REVENUE MODEL</div>
+        <div>
+          <h2>产品与收入结构</h2>
+          <p class="section-intro">
+            先按客户入口进入，再按 L0-L3 升级；不是散卖服务菜单。
+          </p>
+        </div>
+      </div>
+
+      <div class="module-block">
+        <div class="module-label">客户入口</div>
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th>对象</th>
+              <th>入口产品</th>
+              <th>解决什么</th>
+              <th>收费逻辑</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="对象"><strong>VC</strong></td>
+              <td data-label="入口产品">Growth DD、投后 GTM、Portfolio Growth。</td>
+              <td data-label="解决什么">投前看风险，投后接 GTM。</td>
+              <td data-label="收费逻辑">项目费、季度费、年度费。</td>
+            </tr>
+            <tr>
+              <td data-label="对象"><strong>品牌方</strong></td>
+              <td data-label="入口产品">出海诊断、阶段性增长负责人、品牌与 GTM。</td>
+              <td data-label="解决什么">定市场、人群、表达、渠道。</td>
+              <td data-label="收费逻辑">诊断费、月费、项目费。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="module-block">
+        <div class="module-label">L0-L3 收入阶梯</div>
+        <div class="revenue-grid">
+          <div class="revenue">
+            <b>L0 出海罗盘</b>
+            <p>定方向。判断有没有海外真实需求，是否值得继续投入。收入：诊断费 / Growth DD 项目费。</p>
+          </div>
+          <div class="revenue">
+            <b>L1 出海地图</b>
+            <p>定路线。明确第一市场、第一人群、第一句话、第一渠道和第一笔预算。收入：项目费。</p>
+          </div>
+          <div class="revenue">
+            <b>L2 阶段性增长负责人</b>
+            <p>持续判断。参与增长决策、预算分配、团队与供应商选择、复盘。收入：月费 / 季度费。</p>
+          </div>
+          <div class="revenue">
+            <b>L3 长期增长伙伴</b>
+            <p>面向 VC 被投组合或少数高质量品牌。收入：年度费、里程碑奖金、长期上行收益。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gtm">
+      <div class="section-head">
+        <div class="num">07 / GO TO MARKET</div>
+        <div>
+          <h2>远汐自己的增长飞轮</h2>
+          <p class="section-intro">
+            小流量，高信任。
+          </p>
+        </div>
+      </div>
+
+      <div class="flywheel">
+        <div class="wheel-step">
+          <b>观点输出</b>
+          <span>讲硬件出海判断题。</span>
+        </div>
+        <div class="wheel-step">
+          <b>VC 信任</b>
+          <span>从 DD 和闭门分享进入。</span>
+        </div>
+        <div class="wheel-step">
+          <b>品牌诊断</b>
+          <span>转化诊断和季度陪跑。</span>
+        </div>
+        <div class="wheel-step">
+          <b>案例沉淀</b>
+          <span>用匿名案例证明判断。</span>
+        </div>
+        <div class="wheel-step">
+          <b>复购合作</b>
+          <span>从诊断进入季度陪跑。</span>
+        </div>
+        <div class="wheel-step">
+          <b>反向介绍</b>
+          <span>经同意，介绍给匹配 VC。</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="company">
+      <div class="section-head">
+        <div class="num">08 / COMPANY DESIGN</div>
+        <div>
+          <h2>不要做大而散的服务商</h2>
+          <p class="section-intro">
+            小核心团队抓判断，执行交给专家网络。
+          </p>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="card">
+          <h3>0 到 6 个月</h3>
+          <p>鹿汐负责判断、销售、关键关系。配项目运营、研究分析和提案支持。</p>
+        </div>
+        <div class="card">
+          <h3>6 到 18 个月</h3>
+          <p>稳定成交后，补运营中枢、策略负责人、品牌内容负责人。合伙人只给真正带来增量的人。</p>
+        </div>
+      </div>
+
+      <div class="pill-row">
+        <span class="pill">判断在内</span>
+        <span class="pill">执行在外</span>
+        <span class="pill clay">鹿汐把关关键判断</span>
+        <span class="pill gold">只服务少数高质量客户</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>远汐 Offing｜在抵达之前，先判断潮水</div>
+      <div>判断先行，资源后置。</div>
+    </footer>
+  </main>
+</body>
+</html>
