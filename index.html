@@ -85,6 +85,41 @@
       overflow: visible;
     }
 
+    .icon-sprite {
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .mini-icon {
+      flex: 0 0 auto;
+      width: 18px;
+      height: 18px;
+      color: var(--sea);
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .mini-icon.clay {
+      color: var(--clay);
+    }
+
+    .icon-title {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
     .cover {
       position: relative;
       display: grid;
@@ -254,7 +289,9 @@
     }
 
     .quick-card b {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       font-size: 21px;
       line-height: 1.1;
       margin-bottom: 8px;
@@ -358,6 +395,9 @@
     }
 
     .card h3 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       font-size: 21px;
       margin-bottom: 12px;
     }
@@ -406,7 +446,9 @@
     }
 
     .insight b {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       margin-bottom: 10px;
       color: var(--sea);
       font-size: 20px;
@@ -450,7 +492,9 @@
     }
 
     .logic-step b {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       margin-bottom: 8px;
       color: var(--sea);
     }
@@ -618,7 +662,9 @@
 
     .revenue b {
       color: var(--clay);
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       margin-bottom: 10px;
     }
 
@@ -644,7 +690,9 @@
     }
 
     .wheel-step b {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 8px;
       color: var(--sea);
       margin-bottom: 8px;
       font-size: 14px;
@@ -1107,6 +1155,70 @@
 </head>
 <body>
   <main class="page">
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-users" viewBox="0 0 24 24">
+        <path d="M8.5 11a3 3 0 1 0 0-6a3 3 0 0 0 0 6Z"></path>
+        <path d="M3.5 19c.8-3 2.5-4.5 5-4.5s4.2 1.5 5 4.5"></path>
+        <path d="M16.5 10.5a2.6 2.6 0 1 0 0-5.2"></path>
+        <path d="M15.8 14.2c2.2.2 3.7 1.7 4.7 4.3"></path>
+      </symbol>
+      <symbol id="icon-entry" viewBox="0 0 24 24">
+        <path d="M5 20V4h10v16"></path>
+        <path d="M15 12h5"></path>
+        <path d="M18 9l3 3l-3 3"></path>
+        <path d="M9 12h.1"></path>
+      </symbol>
+      <symbol id="icon-network" viewBox="0 0 24 24">
+        <path d="M6 8a3 3 0 1 0 0-6a3 3 0 0 0 0 6Z"></path>
+        <path d="M18 14a3 3 0 1 0 0-6a3 3 0 0 0 0 6Z"></path>
+        <path d="M7.8 7.4l7.4 3.2"></path>
+        <path d="M8.2 17.2l7.1-4.1"></path>
+        <path d="M6 22a3 3 0 1 0 0-6a3 3 0 0 0 0 6Z"></path>
+      </symbol>
+      <symbol id="icon-value" viewBox="0 0 24 24">
+        <path d="M12 3l2.8 5.7l6.2.9l-4.5 4.4l1.1 6.2L12 17.3l-5.6 2.9l1.1-6.2L3 9.6l6.2-.9L12 3Z"></path>
+      </symbol>
+      <symbol id="icon-compass" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8"></circle>
+        <path d="M15.5 8.5l-2.1 5l-4.9 2l2.1-4.9l4.9-2.1Z"></path>
+      </symbol>
+      <symbol id="icon-map" viewBox="0 0 24 24">
+        <path d="M4 6l5-2l6 2l5-2v14l-5 2l-6-2l-5 2V6Z"></path>
+        <path d="M9 4v14"></path>
+        <path d="M15 6v14"></path>
+      </symbol>
+      <symbol id="icon-lead" viewBox="0 0 24 24">
+        <path d="M12 4v16"></path>
+        <path d="M5 9l7-5l7 5"></path>
+        <path d="M7 14h10"></path>
+        <path d="M7 19h10"></path>
+      </symbol>
+      <symbol id="icon-growth" viewBox="0 0 24 24">
+        <path d="M4 18h16"></path>
+        <path d="M6 15l4-4l3 3l5-7"></path>
+        <path d="M16 7h2v2"></path>
+      </symbol>
+      <symbol id="icon-signal" viewBox="0 0 24 24">
+        <path d="M4 16c4-4 12-4 16 0"></path>
+        <path d="M7 19c2.8-2.4 7.2-2.4 10 0"></path>
+        <path d="M10.5 21.2c.9-.6 2.1-.6 3 0"></path>
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path d="M12 3l7 3v5c0 4.5-2.6 7.7-7 10c-4.4-2.3-7-5.5-7-10V6l7-3Z"></path>
+        <path d="M9 12l2 2l4-5"></path>
+      </symbol>
+      <symbol id="icon-spark" viewBox="0 0 24 24">
+        <path d="M12 3v5"></path>
+        <path d="M12 16v5"></path>
+        <path d="M3 12h5"></path>
+        <path d="M16 12h5"></path>
+        <path d="M7.5 7.5l2 2"></path>
+        <path d="M14.5 14.5l2 2"></path>
+        <path d="M16.5 7.5l-2 2"></path>
+        <path d="M9.5 14.5l-2 2"></path>
+      </symbol>
+    </svg>
+
     <header class="topbar">
       <div class="brand-lockup">
         <svg class="offing-symbol" viewBox="0 0 96 96" aria-hidden="true">
@@ -1148,19 +1260,19 @@
 
     <div class="quick-grid" aria-label="business highlights">
       <div class="quick-card">
-        <b>核心客户</b>
+        <b class="icon-title"><svg class="mini-icon"><use href="#icon-users"></use></svg>核心客户</b>
         <span>VC（Venture Capital）、天使到 Pre-A（A 轮前）品牌方。</span>
       </div>
       <div class="quick-card">
-        <b>入口</b>
+        <b class="icon-title"><svg class="mini-icon"><use href="#icon-entry"></use></svg>入口</b>
         <span>Growth DD（Growth Due Diligence，海外增长尽调）、出海进入诊断、投后 GTM。</span>
       </div>
       <div class="quick-card">
-        <b>形态</b>
+        <b class="icon-title"><svg class="mini-icon"><use href="#icon-network"></use></svg>形态</b>
         <span>鹿汐判断 + 小团队 + 专家网络 + VC 信任。</span>
       </div>
       <div class="quick-card">
-        <b>价值</b>
+        <b class="icon-title"><svg class="mini-icon"><use href="#icon-value"></use></svg>价值</b>
         <span>品牌少犯贵的错，VC 更早看清增长风险。</span>
       </div>
     </div>
@@ -1193,23 +1305,23 @@
 
       <div class="logic-line">
         <div class="logic-step">
-          <b>第一市场</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-map"></use></svg>第一市场</b>
           <span>先打哪里。</span>
         </div>
         <div class="logic-step">
-          <b>第一人群</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-users"></use></svg>第一人群</b>
           <span>谁会先买。</span>
         </div>
         <div class="logic-step">
-          <b>第一句话</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-signal"></use></svg>第一句话</b>
           <span>卖点怎么讲。</span>
         </div>
         <div class="logic-step">
-          <b>第一渠道</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-entry"></use></svg>第一渠道</b>
           <span>DTC（Direct-to-Consumer，品牌官网直销）、Amazon、零售怎么排。</span>
         </div>
         <div class="logic-step">
-          <b>第一笔预算</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-value"></use></svg>第一笔预算</b>
           <span>钱先花哪。</span>
         </div>
       </div>
@@ -1228,15 +1340,15 @@
 
       <div class="insight-grid">
         <article class="insight">
-          <b>AI 硬件和消费科技正在密集出海</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-spark"></use></svg>AI 硬件和消费科技正在密集出海</b>
           <p>产品、供应链和成本优势更成熟，但海外用户为什么买、先卖给谁、用什么话讲，仍然是早期生死题。</p>
         </article>
         <article class="insight">
-          <b>VC 缺少增长 DD</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-shield"></use></svg>VC 缺少增长 DD</b>
           <p>技术、财务、供应链有人看，但海外市场能不能成立、第一笔预算会不会烧错，常常没人替 VC 判断。</p>
         </article>
         <article class="insight">
-          <b>品牌方不能一上来就重组团队</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-entry"></use></svg>品牌方不能一上来就重组团队</b>
           <p>自己找 CMO、搭团队太慢太贵；直接找服务商又容易先执行后判断。远汐先把方向定清楚。</p>
         </article>
       </div>
@@ -1255,11 +1367,11 @@
 
       <div class="two-col">
         <div class="card">
-          <h3>品牌方的痛点</h3>
+          <h3 class="icon-title"><svg class="mini-icon"><use href="#icon-users"></use></svg>品牌方的痛点</h3>
           <p>产品会做，海外购买理由没立住。</p>
         </div>
         <div class="card">
-          <h3>VC 的痛点</h3>
+          <h3 class="icon-title"><svg class="mini-icon"><use href="#icon-shield"></use></svg>VC 的痛点</h3>
           <p>技术尽调有了，海外增长判断缺席。</p>
         </div>
       </div>
@@ -1392,19 +1504,19 @@
         <div class="module-label">L0-L3 收入阶梯</div>
         <div class="revenue-grid">
           <div class="revenue">
-            <b>L0 出海罗盘</b>
+            <b class="icon-title"><svg class="mini-icon clay"><use href="#icon-compass"></use></svg>L0 出海罗盘</b>
             <p>定方向。判断有没有海外真实需求，是否值得继续投入。收入：诊断费 / Growth DD 项目费。</p>
           </div>
           <div class="revenue">
-            <b>L1 出海地图</b>
+            <b class="icon-title"><svg class="mini-icon clay"><use href="#icon-map"></use></svg>L1 出海地图</b>
             <p>定路线。明确第一市场、第一人群、第一句话、第一渠道和第一笔预算。收入：项目费。</p>
           </div>
           <div class="revenue">
-            <b>L2 阶段性增长负责人</b>
+            <b class="icon-title"><svg class="mini-icon clay"><use href="#icon-lead"></use></svg>L2 阶段性增长负责人</b>
             <p>持续判断。参与增长决策、预算分配、团队与供应商选择、复盘。收入：月费 / 季度费。</p>
           </div>
           <div class="revenue">
-            <b>L3 长期增长伙伴</b>
+            <b class="icon-title"><svg class="mini-icon clay"><use href="#icon-growth"></use></svg>L3 长期增长伙伴</b>
             <p>面向 VC 被投组合或少数高质量品牌。收入：年度费、里程碑奖金、长期上行收益。</p>
           </div>
         </div>
@@ -1424,27 +1536,27 @@
 
       <div class="flywheel">
         <div class="wheel-step">
-          <b>观点输出</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-signal"></use></svg>观点输出</b>
           <span>讲硬件出海判断题。</span>
         </div>
         <div class="wheel-step">
-          <b>VC 信任</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-shield"></use></svg>VC 信任</b>
           <span>从 DD 和闭门分享进入。</span>
         </div>
         <div class="wheel-step">
-          <b>品牌诊断</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-compass"></use></svg>品牌诊断</b>
           <span>转化诊断和季度陪跑。</span>
         </div>
         <div class="wheel-step">
-          <b>案例沉淀</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-map"></use></svg>案例沉淀</b>
           <span>用匿名案例证明判断。</span>
         </div>
         <div class="wheel-step">
-          <b>复购合作</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-growth"></use></svg>复购合作</b>
           <span>从诊断进入季度陪跑。</span>
         </div>
         <div class="wheel-step">
-          <b>反向介绍</b>
+          <b class="icon-title"><svg class="mini-icon"><use href="#icon-network"></use></svg>反向介绍</b>
           <span>经同意，介绍给匹配 VC。</span>
         </div>
       </div>
@@ -1463,11 +1575,11 @@
 
       <div class="two-col">
         <div class="card">
-          <h3>0 到 6 个月</h3>
+          <h3 class="icon-title"><svg class="mini-icon"><use href="#icon-compass"></use></svg>0 到 6 个月</h3>
           <p>鹿汐负责判断、销售、关键关系。配项目运营、研究分析和提案支持。</p>
         </div>
         <div class="card">
-          <h3>6 到 18 个月</h3>
+          <h3 class="icon-title"><svg class="mini-icon"><use href="#icon-growth"></use></svg>6 到 18 个月</h3>
           <p>稳定成交后，补运营中枢、策略负责人、品牌内容负责人。合伙人只给真正带来增量的人。</p>
         </div>
       </div>
