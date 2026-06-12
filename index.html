@@ -94,11 +94,15 @@
 
     .mini-icon {
       flex: 0 0 auto;
-      width: 18px;
-      height: 18px;
+      width: 28px;
+      height: 28px;
+      padding: 5px;
       color: var(--sea);
+      background: var(--sea-soft);
+      border: 1px solid rgba(45, 98, 97, 0.18);
+      border-radius: 7px;
       stroke: currentColor;
-      stroke-width: 1.8;
+      stroke-width: 1.9;
       stroke-linecap: round;
       stroke-linejoin: round;
       fill: none;
@@ -106,12 +110,14 @@
 
     .mini-icon.clay {
       color: var(--clay);
+      background: var(--clay-soft);
+      border-color: rgba(167, 101, 96, 0.2);
     }
 
     .icon-title {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
     }
 
     .section-kicker {
@@ -824,6 +830,17 @@
       .offing-symbol {
         width: 22px;
         height: 22px;
+      }
+
+      .mini-icon {
+        width: 22px;
+        height: 22px;
+        padding: 4px;
+        border-radius: 6px;
+      }
+
+      .icon-title {
+        gap: 8px;
       }
 
       h1 {
